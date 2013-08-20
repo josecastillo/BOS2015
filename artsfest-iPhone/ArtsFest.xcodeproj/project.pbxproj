@@ -1,0 +1,752 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E74A8D19174B300700293330 /* AFVenueDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E74A8D18174B300700293330 /* AFVenueDetailViewController.m */; };
+		E74A8D1C174B3A6900293330 /* AFVenueAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = E74A8D1B174B3A6900293330 /* AFVenueAnnotationView.m */; };
+		E74A8D1F174B496900293330 /* AFMoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E74A8D1E174B496900293330 /* AFMoreViewController.m */; };
+		E74A8D22174B499600293330 /* AFWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E74A8D21174B499600293330 /* AFWebViewController.m */; };
+		E74A8D35174B58B000293330 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = E74A8D24174B58B000293330 /* back.png */; };
+		E74A8D36174B58B000293330 /* black.png in Resources */ = {isa = PBXBuildFile; fileRef = E74A8D25174B58B000293330 /* black.png */; };
+		E74A8D37174B58B000293330 /* clear.png in Resources */ = {isa = PBXBuildFile; fileRef = E74A8D26174B58B000293330 /* clear.png */; };
+		E74A8D3C174B58B000293330 /* magenta.png in Resources */ = {isa = PBXBuildFile; fileRef = E74A8D2B174B58B000293330 /* magenta.png */; };
+		E74A8D3D174B58B000293330 /* map-circle-inactive.png in Resources */ = {isa = PBXBuildFile; fileRef = E74A8D2C174B58B000293330 /* map-circle-inactive.png */; };
+		E74A8D3E174B58B000293330 /* map-circle-inactive@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E74A8D2D174B58B000293330 /* map-circle-inactive@2x.png */; };
+		E74A8D3F174B58B000293330 /* map-circle.png in Resources */ = {isa = PBXBuildFile; fileRef = E74A8D2E174B58B000293330 /* map-circle.png */; };
+		E74A8D40174B58B000293330 /* map-circle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E74A8D2F174B58B000293330 /* map-circle@2x.png */; };
+		E74A8D41174B58B000293330 /* map-diamond-inactive.png in Resources */ = {isa = PBXBuildFile; fileRef = E74A8D30174B58B000293330 /* map-diamond-inactive.png */; };
+		E74A8D42174B58B000293330 /* map-diamond-inactive@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E74A8D31174B58B000293330 /* map-diamond-inactive@2x.png */; };
+		E74A8D43174B58B000293330 /* map-diamond.png in Resources */ = {isa = PBXBuildFile; fileRef = E74A8D32174B58B000293330 /* map-diamond.png */; };
+		E74A8D44174B58B000293330 /* map-diamond@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E74A8D33174B58B000293330 /* map-diamond@2x.png */; };
+		E74A8D45174B58B000293330 /* white.png in Resources */ = {isa = PBXBuildFile; fileRef = E74A8D34174B58B000293330 /* white.png */; };
+		E74A8D48174B58E900293330 /* splash.png in Resources */ = {isa = PBXBuildFile; fileRef = E74A8D46174B58E900293330 /* splash.png */; };
+		E74A8D49174B58E900293330 /* splash@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E74A8D47174B58E900293330 /* splash@2x.png */; };
+		E74A8D4B174B5B9800293330 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = E74A8D4A174B5B9800293330 /* Default.png */; };
+		E74A8D4D174B5B9C00293330 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E74A8D4C174B5B9C00293330 /* Default@2x.png */; };
+		E74A8D4F174B5B9F00293330 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E74A8D4E174B5B9E00293330 /* Default-568h@2x.png */; };
+		E74A8D52174B5FF500293330 /* AFAppearanceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E74A8D51174B5FF500293330 /* AFAppearanceManager.m */; };
+		E74A8D54174BA74000293330 /* back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E74A8D53174BA74000293330 /* back@2x.png */; };
+		E772BA7C174333D400DD810D /* AFEventListingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E772BA7B174333D400DD810D /* AFEventListingCell.m */; };
+		E77E249F1743414300FF2E02 /* AFEventDetailTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = E77E249E1743414300FF2E02 /* AFEventDetailTableHeaderView.m */; };
+		E77E24A41744571000FF2E02 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E77E24A31744571000FF2E02 /* MapKit.framework */; };
+		E77E24A61744571500FF2E02 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E77E24A51744571500FF2E02 /* CoreLocation.framework */; };
+		E77E24A8174A714900FF2E02 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E77E24A7174A714900FF2E02 /* AddressBook.framework */; };
+		E77E24AB174AD7F400FF2E02 /* AFMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E77E24AA174AD7F400FF2E02 /* AFMapViewController.m */; };
+		E77E24AE174AD95F00FF2E02 /* AFVenueAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = E77E24AD174AD95F00FF2E02 /* AFVenueAnnotation.m */; };
+		E7825AC2173E9F0C00A88F02 /* AFDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E7825AC1173E9F0C00A88F02 /* AFDataSource.m */; };
+		E7825AC4173EA7FE00A88F02 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E7825AC3173EA7FE00A88F02 /* Icon.png */; };
+		E7825AC6173EA80300A88F02 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E7825AC5173EA80300A88F02 /* Icon@2x.png */; };
+		E7825ACC173EB1AB00A88F02 /* AFTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = E7825ACB173EB1AB00A88F02 /* AFTableHeaderView.m */; };
+		E7825ACF173FF99800A88F02 /* AFEventDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7825ACE173FF99800A88F02 /* AFEventDetailViewController.m */; };
+		E7825ADB174203F100A88F02 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7825ADA174203F000A88F02 /* QuartzCore.framework */; };
+		E7825ADD174203F700A88F02 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E7825ADC174203F700A88F02 /* libz.dylib */; };
+		E7FC984D16C81A8F0052165A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7FC984C16C81A8F0052165A /* UIKit.framework */; };
+		E7FC984F16C81A8F0052165A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7FC984E16C81A8F0052165A /* Foundation.framework */; };
+		E7FC985116C81A8F0052165A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7FC985016C81A8F0052165A /* CoreGraphics.framework */; };
+		E7FC985316C81A8F0052165A /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7FC985216C81A8F0052165A /* CoreData.framework */; };
+		E7FC985916C81A8F0052165A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E7FC985716C81A8F0052165A /* InfoPlist.strings */; };
+		E7FC985B16C81A8F0052165A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E7FC985A16C81A8F0052165A /* main.m */; };
+		E7FC985F16C81A8F0052165A /* AFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E7FC985E16C81A8F0052165A /* AFAppDelegate.m */; };
+		E7FC986816C81A8F0052165A /* ArtsFest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E7FC986616C81A8F0052165A /* ArtsFest.xcdatamodeld */; };
+		E7FC987016C81A900052165A /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7FC986F16C81A900052165A /* SenTestingKit.framework */; };
+		E7FC987116C81A900052165A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7FC984C16C81A8F0052165A /* UIKit.framework */; };
+		E7FC987216C81A900052165A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7FC984E16C81A8F0052165A /* Foundation.framework */; };
+		E7FC987316C81A900052165A /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7FC985216C81A8F0052165A /* CoreData.framework */; };
+		E7FC987B16C81A900052165A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E7FC987916C81A900052165A /* InfoPlist.strings */; };
+		E7FC987E16C81A900052165A /* ArtsFestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E7FC987D16C81A900052165A /* ArtsFestTests.m */; };
+		E7FC988A16C81AEF0052165A /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7FC988916C81AEF0052165A /* Storyboard.storyboard */; };
+		E7FC988B16C81AEF0052165A /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7FC988916C81AEF0052165A /* Storyboard.storyboard */; };
+		E7FC98E116C826F10052165A /* AFSponsorListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7FC98E016C826F10052165A /* AFSponsorListViewController.m */; };
+		E7FC98E216C826F10052165A /* AFSponsorListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7FC98E016C826F10052165A /* AFSponsorListViewController.m */; };
+		E7FC98E516C82A9D0052165A /* AFListingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7FC98E416C82A9D0052165A /* AFListingViewController.m */; };
+		E7FC98E616C82A9D0052165A /* AFListingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7FC98E416C82A9D0052165A /* AFListingViewController.m */; };
+		E7FC98E916C82B630052165A /* AFEventListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7FC98E816C82B630052165A /* AFEventListViewController.m */; };
+		E7FC98EA16C82B630052165A /* AFEventListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7FC98E816C82B630052165A /* AFEventListViewController.m */; };
+		E7FC98ED16C82B700052165A /* AFArtistListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7FC98EC16C82B700052165A /* AFArtistListViewController.m */; };
+		E7FC98EE16C82B700052165A /* AFArtistListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7FC98EC16C82B700052165A /* AFArtistListViewController.m */; };
+		E7FC98F116C82B820052165A /* AFCategoryListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7FC98F016C82B820052165A /* AFCategoryListViewController.m */; };
+		E7FC98F216C82B820052165A /* AFCategoryListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7FC98F016C82B820052165A /* AFCategoryListViewController.m */; };
+		E7FC98F516C82CD50052165A /* AFVenueListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7FC98F416C82CD50052165A /* AFVenueListViewController.m */; };
+		E7FC98F616C82CD50052165A /* AFVenueListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7FC98F416C82CD50052165A /* AFVenueListViewController.m */; };
+		E7FC98F916C82E000052165A /* AFSplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7FC98F816C82E000052165A /* AFSplashViewController.m */; };
+		E7FC98FA16C82E000052165A /* AFSplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7FC98F816C82E000052165A /* AFSplashViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E7FC987416C81A900052165A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E7FC983F16C81A8F0052165A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E7FC984716C81A8F0052165A;
+			remoteInfo = ArtsFest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E74A8D17174B300700293330 /* AFVenueDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFVenueDetailViewController.h; path = Controller/AFVenueDetailViewController.h; sourceTree = "<group>"; };
+		E74A8D18174B300700293330 /* AFVenueDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFVenueDetailViewController.m; path = Controller/AFVenueDetailViewController.m; sourceTree = "<group>"; };
+		E74A8D1A174B3A6900293330 /* AFVenueAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFVenueAnnotationView.h; path = View/AFVenueAnnotationView.h; sourceTree = "<group>"; };
+		E74A8D1B174B3A6900293330 /* AFVenueAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFVenueAnnotationView.m; path = View/AFVenueAnnotationView.m; sourceTree = "<group>"; };
+		E74A8D1D174B496900293330 /* AFMoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFMoreViewController.h; path = Controller/AFMoreViewController.h; sourceTree = "<group>"; };
+		E74A8D1E174B496900293330 /* AFMoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFMoreViewController.m; path = Controller/AFMoreViewController.m; sourceTree = "<group>"; };
+		E74A8D20174B499600293330 /* AFWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFWebViewController.h; path = Controller/AFWebViewController.h; sourceTree = "<group>"; };
+		E74A8D21174B499600293330 /* AFWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFWebViewController.m; path = Controller/AFWebViewController.m; sourceTree = "<group>"; };
+		E74A8D24174B58B000293330 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
+		E74A8D25174B58B000293330 /* black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = black.png; sourceTree = "<group>"; };
+		E74A8D26174B58B000293330 /* clear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clear.png; sourceTree = "<group>"; };
+		E74A8D2B174B58B000293330 /* magenta.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = magenta.png; sourceTree = "<group>"; };
+		E74A8D2C174B58B000293330 /* map-circle-inactive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map-circle-inactive.png"; sourceTree = "<group>"; };
+		E74A8D2D174B58B000293330 /* map-circle-inactive@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map-circle-inactive@2x.png"; sourceTree = "<group>"; };
+		E74A8D2E174B58B000293330 /* map-circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map-circle.png"; sourceTree = "<group>"; };
+		E74A8D2F174B58B000293330 /* map-circle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map-circle@2x.png"; sourceTree = "<group>"; };
+		E74A8D30174B58B000293330 /* map-diamond-inactive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map-diamond-inactive.png"; sourceTree = "<group>"; };
+		E74A8D31174B58B000293330 /* map-diamond-inactive@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map-diamond-inactive@2x.png"; sourceTree = "<group>"; };
+		E74A8D32174B58B000293330 /* map-diamond.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map-diamond.png"; sourceTree = "<group>"; };
+		E74A8D33174B58B000293330 /* map-diamond@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map-diamond@2x.png"; sourceTree = "<group>"; };
+		E74A8D34174B58B000293330 /* white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = white.png; sourceTree = "<group>"; };
+		E74A8D46174B58E900293330 /* splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash.png; sourceTree = "<group>"; };
+		E74A8D47174B58E900293330 /* splash@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "splash@2x.png"; sourceTree = "<group>"; };
+		E74A8D4A174B5B9800293330 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../../Default.png; sourceTree = "<group>"; };
+		E74A8D4C174B5B9C00293330 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../../Default@2x.png"; sourceTree = "<group>"; };
+		E74A8D4E174B5B9E00293330 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../../Default-568h@2x.png"; sourceTree = "<group>"; };
+		E74A8D50174B5FF500293330 /* AFAppearanceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFAppearanceManager.h; path = View/AFAppearanceManager.h; sourceTree = "<group>"; };
+		E74A8D51174B5FF500293330 /* AFAppearanceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFAppearanceManager.m; path = View/AFAppearanceManager.m; sourceTree = "<group>"; };
+		E74A8D53174BA74000293330 /* back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back@2x.png"; sourceTree = "<group>"; };
+		E772BA7A174333D400DD810D /* AFEventListingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFEventListingCell.h; path = View/AFEventListingCell.h; sourceTree = "<group>"; };
+		E772BA7B174333D400DD810D /* AFEventListingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFEventListingCell.m; path = View/AFEventListingCell.m; sourceTree = "<group>"; };
+		E77E249D1743414300FF2E02 /* AFEventDetailTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFEventDetailTableHeaderView.h; path = View/AFEventDetailTableHeaderView.h; sourceTree = "<group>"; };
+		E77E249E1743414300FF2E02 /* AFEventDetailTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFEventDetailTableHeaderView.m; path = View/AFEventDetailTableHeaderView.m; sourceTree = "<group>"; };
+		E77E24A31744571000FF2E02 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		E77E24A51744571500FF2E02 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		E77E24A7174A714900FF2E02 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		E77E24A9174AD7F300FF2E02 /* AFMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFMapViewController.h; path = Controller/AFMapViewController.h; sourceTree = "<group>"; };
+		E77E24AA174AD7F400FF2E02 /* AFMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFMapViewController.m; path = Controller/AFMapViewController.m; sourceTree = "<group>"; };
+		E77E24AC174AD95F00FF2E02 /* AFVenueAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFVenueAnnotation.h; path = Model/AFVenueAnnotation.h; sourceTree = "<group>"; };
+		E77E24AD174AD95F00FF2E02 /* AFVenueAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFVenueAnnotation.m; path = Model/AFVenueAnnotation.m; sourceTree = "<group>"; };
+		E7825AC0173E9F0C00A88F02 /* AFDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFDataSource.h; path = Model/AFDataSource.h; sourceTree = "<group>"; };
+		E7825AC1173E9F0C00A88F02 /* AFDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFDataSource.m; path = Model/AFDataSource.m; sourceTree = "<group>"; };
+		E7825AC3173EA7FE00A88F02 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = ../Icon.png; sourceTree = "<group>"; };
+		E7825AC5173EA80300A88F02 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "../Icon@2x.png"; sourceTree = "<group>"; };
+		E7825ACA173EB1AB00A88F02 /* AFTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFTableHeaderView.h; path = View/AFTableHeaderView.h; sourceTree = "<group>"; };
+		E7825ACB173EB1AB00A88F02 /* AFTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFTableHeaderView.m; path = View/AFTableHeaderView.m; sourceTree = "<group>"; };
+		E7825ACD173FF99800A88F02 /* AFEventDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFEventDetailViewController.h; path = Controller/AFEventDetailViewController.h; sourceTree = "<group>"; };
+		E7825ACE173FF99800A88F02 /* AFEventDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFEventDetailViewController.m; path = Controller/AFEventDetailViewController.m; sourceTree = "<group>"; };
+		E7825ADA174203F000A88F02 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		E7825ADC174203F700A88F02 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		E79BB313174C1411006740D3 /* ArtsFest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ArtsFest.entitlements; sourceTree = "<group>"; };
+		E7FC984816C81A8F0052165A /* ArtsFest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArtsFest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7FC984C16C81A8F0052165A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E7FC984E16C81A8F0052165A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E7FC985016C81A8F0052165A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E7FC985216C81A8F0052165A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		E7FC985616C81A8F0052165A /* ArtsFest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ArtsFest-Info.plist"; sourceTree = "<group>"; };
+		E7FC985816C81A8F0052165A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E7FC985A16C81A8F0052165A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E7FC985C16C81A8F0052165A /* ArtsFest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ArtsFest-Prefix.pch"; sourceTree = "<group>"; };
+		E7FC985D16C81A8F0052165A /* AFAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFAppDelegate.h; sourceTree = "<group>"; };
+		E7FC985E16C81A8F0052165A /* AFAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFAppDelegate.m; sourceTree = "<group>"; };
+		E7FC986716C81A8F0052165A /* ArtsFest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ArtsFest.xcdatamodel; sourceTree = "<group>"; };
+		E7FC986E16C81A900052165A /* ArtsFestTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArtsFestTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7FC986F16C81A900052165A /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		E7FC987816C81A900052165A /* ArtsFestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ArtsFestTests-Info.plist"; sourceTree = "<group>"; };
+		E7FC987A16C81A900052165A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E7FC987C16C81A900052165A /* ArtsFestTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArtsFestTests.h; sourceTree = "<group>"; };
+		E7FC987D16C81A900052165A /* ArtsFestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArtsFestTests.m; sourceTree = "<group>"; };
+		E7FC988916C81AEF0052165A /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		E7FC98DF16C826F10052165A /* AFSponsorListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFSponsorListViewController.h; path = Controller/AFSponsorListViewController.h; sourceTree = "<group>"; };
+		E7FC98E016C826F10052165A /* AFSponsorListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFSponsorListViewController.m; path = Controller/AFSponsorListViewController.m; sourceTree = "<group>"; };
+		E7FC98E316C82A9D0052165A /* AFListingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFListingViewController.h; path = Controller/AFListingViewController.h; sourceTree = "<group>"; };
+		E7FC98E416C82A9D0052165A /* AFListingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFListingViewController.m; path = Controller/AFListingViewController.m; sourceTree = "<group>"; };
+		E7FC98E716C82B630052165A /* AFEventListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFEventListViewController.h; path = Controller/AFEventListViewController.h; sourceTree = "<group>"; };
+		E7FC98E816C82B630052165A /* AFEventListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFEventListViewController.m; path = Controller/AFEventListViewController.m; sourceTree = "<group>"; };
+		E7FC98EB16C82B700052165A /* AFArtistListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFArtistListViewController.h; path = Controller/AFArtistListViewController.h; sourceTree = "<group>"; };
+		E7FC98EC16C82B700052165A /* AFArtistListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFArtistListViewController.m; path = Controller/AFArtistListViewController.m; sourceTree = "<group>"; };
+		E7FC98EF16C82B820052165A /* AFCategoryListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFCategoryListViewController.h; path = Controller/AFCategoryListViewController.h; sourceTree = "<group>"; };
+		E7FC98F016C82B820052165A /* AFCategoryListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFCategoryListViewController.m; path = Controller/AFCategoryListViewController.m; sourceTree = "<group>"; };
+		E7FC98F316C82CD50052165A /* AFVenueListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFVenueListViewController.h; path = Controller/AFVenueListViewController.h; sourceTree = "<group>"; };
+		E7FC98F416C82CD50052165A /* AFVenueListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFVenueListViewController.m; path = Controller/AFVenueListViewController.m; sourceTree = "<group>"; };
+		E7FC98F716C82E000052165A /* AFSplashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFSplashViewController.h; path = Controller/AFSplashViewController.h; sourceTree = "<group>"; };
+		E7FC98F816C82E000052165A /* AFSplashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFSplashViewController.m; path = Controller/AFSplashViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E7FC984516C81A8F0052165A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E77E24A8174A714900FF2E02 /* AddressBook.framework in Frameworks */,
+				E77E24A61744571500FF2E02 /* CoreLocation.framework in Frameworks */,
+				E77E24A41744571000FF2E02 /* MapKit.framework in Frameworks */,
+				E7825ADD174203F700A88F02 /* libz.dylib in Frameworks */,
+				E7825ADB174203F100A88F02 /* QuartzCore.framework in Frameworks */,
+				E7FC984D16C81A8F0052165A /* UIKit.framework in Frameworks */,
+				E7FC984F16C81A8F0052165A /* Foundation.framework in Frameworks */,
+				E7FC985116C81A8F0052165A /* CoreGraphics.framework in Frameworks */,
+				E7FC985316C81A8F0052165A /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7FC986A16C81A900052165A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7FC987016C81A900052165A /* SenTestingKit.framework in Frameworks */,
+				E7FC987116C81A900052165A /* UIKit.framework in Frameworks */,
+				E7FC987216C81A900052165A /* Foundation.framework in Frameworks */,
+				E7FC987316C81A900052165A /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E74A8D23174B58B000293330 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				E74A8D4E174B5B9E00293330 /* Default-568h@2x.png */,
+				E74A8D4C174B5B9C00293330 /* Default@2x.png */,
+				E74A8D4A174B5B9800293330 /* Default.png */,
+				E74A8D46174B58E900293330 /* splash.png */,
+				E74A8D47174B58E900293330 /* splash@2x.png */,
+				E74A8D24174B58B000293330 /* back.png */,
+				E74A8D53174BA74000293330 /* back@2x.png */,
+				E74A8D25174B58B000293330 /* black.png */,
+				E74A8D26174B58B000293330 /* clear.png */,
+				E74A8D2B174B58B000293330 /* magenta.png */,
+				E74A8D2C174B58B000293330 /* map-circle-inactive.png */,
+				E74A8D2D174B58B000293330 /* map-circle-inactive@2x.png */,
+				E74A8D2E174B58B000293330 /* map-circle.png */,
+				E74A8D2F174B58B000293330 /* map-circle@2x.png */,
+				E74A8D30174B58B000293330 /* map-diamond-inactive.png */,
+				E74A8D31174B58B000293330 /* map-diamond-inactive@2x.png */,
+				E74A8D32174B58B000293330 /* map-diamond.png */,
+				E74A8D33174B58B000293330 /* map-diamond@2x.png */,
+				E74A8D34174B58B000293330 /* white.png */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		E7825ABE173E9EDD00A88F02 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E7825AC0173E9F0C00A88F02 /* AFDataSource.h */,
+				E7825AC1173E9F0C00A88F02 /* AFDataSource.m */,
+				E77E24AC174AD95F00FF2E02 /* AFVenueAnnotation.h */,
+				E77E24AD174AD95F00FF2E02 /* AFVenueAnnotation.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		E7825ABF173E9EE300A88F02 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E7FC98E316C82A9D0052165A /* AFListingViewController.h */,
+				E7FC98E416C82A9D0052165A /* AFListingViewController.m */,
+				E7FC98DF16C826F10052165A /* AFSponsorListViewController.h */,
+				E7FC98E016C826F10052165A /* AFSponsorListViewController.m */,
+				E7FC98E716C82B630052165A /* AFEventListViewController.h */,
+				E7FC98E816C82B630052165A /* AFEventListViewController.m */,
+				E7FC98EB16C82B700052165A /* AFArtistListViewController.h */,
+				E7FC98EC16C82B700052165A /* AFArtistListViewController.m */,
+				E7FC98EF16C82B820052165A /* AFCategoryListViewController.h */,
+				E7FC98F016C82B820052165A /* AFCategoryListViewController.m */,
+				E7FC98F316C82CD50052165A /* AFVenueListViewController.h */,
+				E7FC98F416C82CD50052165A /* AFVenueListViewController.m */,
+				E7FC98F716C82E000052165A /* AFSplashViewController.h */,
+				E7FC98F816C82E000052165A /* AFSplashViewController.m */,
+				E7825ACD173FF99800A88F02 /* AFEventDetailViewController.h */,
+				E7825ACE173FF99800A88F02 /* AFEventDetailViewController.m */,
+				E77E24A9174AD7F300FF2E02 /* AFMapViewController.h */,
+				E77E24AA174AD7F400FF2E02 /* AFMapViewController.m */,
+				E74A8D17174B300700293330 /* AFVenueDetailViewController.h */,
+				E74A8D18174B300700293330 /* AFVenueDetailViewController.m */,
+				E74A8D1D174B496900293330 /* AFMoreViewController.h */,
+				E74A8D1E174B496900293330 /* AFMoreViewController.m */,
+				E74A8D20174B499600293330 /* AFWebViewController.h */,
+				E74A8D21174B499600293330 /* AFWebViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		E7825AC9173EB19100A88F02 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E7825ACA173EB1AB00A88F02 /* AFTableHeaderView.h */,
+				E7825ACB173EB1AB00A88F02 /* AFTableHeaderView.m */,
+				E772BA7A174333D400DD810D /* AFEventListingCell.h */,
+				E772BA7B174333D400DD810D /* AFEventListingCell.m */,
+				E77E249D1743414300FF2E02 /* AFEventDetailTableHeaderView.h */,
+				E77E249E1743414300FF2E02 /* AFEventDetailTableHeaderView.m */,
+				E74A8D1A174B3A6900293330 /* AFVenueAnnotationView.h */,
+				E74A8D1B174B3A6900293330 /* AFVenueAnnotationView.m */,
+				E74A8D50174B5FF500293330 /* AFAppearanceManager.h */,
+				E74A8D51174B5FF500293330 /* AFAppearanceManager.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		E7FC983D16C81A8E0052165A = {
+			isa = PBXGroup;
+			children = (
+				E7FC985416C81A8F0052165A /* ArtsFest */,
+				E7FC987616C81A900052165A /* ArtsFestTests */,
+				E7FC984B16C81A8F0052165A /* Frameworks */,
+				E7FC984916C81A8F0052165A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E7FC984916C81A8F0052165A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E7FC984816C81A8F0052165A /* ArtsFest.app */,
+				E7FC986E16C81A900052165A /* ArtsFestTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E7FC984B16C81A8F0052165A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E7825ADC174203F700A88F02 /* libz.dylib */,
+				E77E24A7174A714900FF2E02 /* AddressBook.framework */,
+				E77E24A51744571500FF2E02 /* CoreLocation.framework */,
+				E77E24A31744571000FF2E02 /* MapKit.framework */,
+				E7825ADA174203F000A88F02 /* QuartzCore.framework */,
+				E7FC984C16C81A8F0052165A /* UIKit.framework */,
+				E7FC984E16C81A8F0052165A /* Foundation.framework */,
+				E7FC985016C81A8F0052165A /* CoreGraphics.framework */,
+				E7FC985216C81A8F0052165A /* CoreData.framework */,
+				E7FC986F16C81A900052165A /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E7FC985416C81A8F0052165A /* ArtsFest */ = {
+			isa = PBXGroup;
+			children = (
+				E7FC985D16C81A8F0052165A /* AFAppDelegate.h */,
+				E7FC985E16C81A8F0052165A /* AFAppDelegate.m */,
+				E7825AC9173EB19100A88F02 /* View */,
+				E7825ABF173E9EE300A88F02 /* Controller */,
+				E7825ABE173E9EDD00A88F02 /* Model */,
+				E7FC986616C81A8F0052165A /* ArtsFest.xcdatamodeld */,
+				E7FC988916C81AEF0052165A /* Storyboard.storyboard */,
+				E7FC985516C81A8F0052165A /* Supporting Files */,
+			);
+			path = ArtsFest;
+			sourceTree = "<group>";
+		};
+		E7FC985516C81A8F0052165A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E74A8D23174B58B000293330 /* Assets */,
+				E7FC985A16C81A8F0052165A /* main.m */,
+				E7FC985C16C81A8F0052165A /* ArtsFest-Prefix.pch */,
+				E7FC985616C81A8F0052165A /* ArtsFest-Info.plist */,
+				E7825AC3173EA7FE00A88F02 /* Icon.png */,
+				E7825AC5173EA80300A88F02 /* Icon@2x.png */,
+				E7FC985716C81A8F0052165A /* InfoPlist.strings */,
+				E79BB313174C1411006740D3 /* ArtsFest.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E7FC987616C81A900052165A /* ArtsFestTests */ = {
+			isa = PBXGroup;
+			children = (
+				E7FC987C16C81A900052165A /* ArtsFestTests.h */,
+				E7FC987D16C81A900052165A /* ArtsFestTests.m */,
+				E7FC987716C81A900052165A /* Supporting Files */,
+			);
+			path = ArtsFestTests;
+			sourceTree = "<group>";
+		};
+		E7FC987716C81A900052165A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E7FC987816C81A900052165A /* ArtsFestTests-Info.plist */,
+				E7FC987916C81A900052165A /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E7FC984716C81A8F0052165A /* ArtsFest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E7FC988116C81A900052165A /* Build configuration list for PBXNativeTarget "ArtsFest" */;
+			buildPhases = (
+				E7FC984416C81A8F0052165A /* Sources */,
+				E7FC984516C81A8F0052165A /* Frameworks */,
+				E7FC984616C81A8F0052165A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ArtsFest;
+			productName = ArtsFest;
+			productReference = E7FC984816C81A8F0052165A /* ArtsFest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E7FC986D16C81A900052165A /* ArtsFestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E7FC988416C81A900052165A /* Build configuration list for PBXNativeTarget "ArtsFestTests" */;
+			buildPhases = (
+				E7FC986916C81A900052165A /* Sources */,
+				E7FC986A16C81A900052165A /* Frameworks */,
+				E7FC986B16C81A900052165A /* Resources */,
+				E7FC986C16C81A900052165A /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E7FC987516C81A900052165A /* PBXTargetDependency */,
+			);
+			name = ArtsFestTests;
+			productName = ArtsFestTests;
+			productReference = E7FC986E16C81A900052165A /* ArtsFestTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E7FC983F16C81A8F0052165A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = AF;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Panchromatic, LLC";
+			};
+			buildConfigurationList = E7FC984216C81A8F0052165A /* Build configuration list for PBXProject "ArtsFest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E7FC983D16C81A8E0052165A;
+			productRefGroup = E7FC984916C81A8F0052165A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E7FC984716C81A8F0052165A /* ArtsFest */,
+				E7FC986D16C81A900052165A /* ArtsFestTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E7FC984616C81A8F0052165A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7FC985916C81A8F0052165A /* InfoPlist.strings in Resources */,
+				E7FC988A16C81AEF0052165A /* Storyboard.storyboard in Resources */,
+				E7825AC4173EA7FE00A88F02 /* Icon.png in Resources */,
+				E7825AC6173EA80300A88F02 /* Icon@2x.png in Resources */,
+				E74A8D35174B58B000293330 /* back.png in Resources */,
+				E74A8D36174B58B000293330 /* black.png in Resources */,
+				E74A8D37174B58B000293330 /* clear.png in Resources */,
+				E74A8D3C174B58B000293330 /* magenta.png in Resources */,
+				E74A8D3D174B58B000293330 /* map-circle-inactive.png in Resources */,
+				E74A8D3E174B58B000293330 /* map-circle-inactive@2x.png in Resources */,
+				E74A8D3F174B58B000293330 /* map-circle.png in Resources */,
+				E74A8D40174B58B000293330 /* map-circle@2x.png in Resources */,
+				E74A8D41174B58B000293330 /* map-diamond-inactive.png in Resources */,
+				E74A8D42174B58B000293330 /* map-diamond-inactive@2x.png in Resources */,
+				E74A8D43174B58B000293330 /* map-diamond.png in Resources */,
+				E74A8D44174B58B000293330 /* map-diamond@2x.png in Resources */,
+				E74A8D45174B58B000293330 /* white.png in Resources */,
+				E74A8D48174B58E900293330 /* splash.png in Resources */,
+				E74A8D49174B58E900293330 /* splash@2x.png in Resources */,
+				E74A8D4B174B5B9800293330 /* Default.png in Resources */,
+				E74A8D4D174B5B9C00293330 /* Default@2x.png in Resources */,
+				E74A8D4F174B5B9F00293330 /* Default-568h@2x.png in Resources */,
+				E74A8D54174BA74000293330 /* back@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7FC986B16C81A900052165A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7FC987B16C81A900052165A /* InfoPlist.strings in Resources */,
+				E7FC988B16C81AEF0052165A /* Storyboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E7FC986C16C81A900052165A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E7FC984416C81A8F0052165A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7FC985B16C81A8F0052165A /* main.m in Sources */,
+				E7FC985F16C81A8F0052165A /* AFAppDelegate.m in Sources */,
+				E7FC986816C81A8F0052165A /* ArtsFest.xcdatamodeld in Sources */,
+				E7FC98E116C826F10052165A /* AFSponsorListViewController.m in Sources */,
+				E7FC98E516C82A9D0052165A /* AFListingViewController.m in Sources */,
+				E7FC98E916C82B630052165A /* AFEventListViewController.m in Sources */,
+				E7FC98ED16C82B700052165A /* AFArtistListViewController.m in Sources */,
+				E7FC98F116C82B820052165A /* AFCategoryListViewController.m in Sources */,
+				E7FC98F516C82CD50052165A /* AFVenueListViewController.m in Sources */,
+				E7FC98F916C82E000052165A /* AFSplashViewController.m in Sources */,
+				E7825AC2173E9F0C00A88F02 /* AFDataSource.m in Sources */,
+				E7825ACC173EB1AB00A88F02 /* AFTableHeaderView.m in Sources */,
+				E7825ACF173FF99800A88F02 /* AFEventDetailViewController.m in Sources */,
+				E772BA7C174333D400DD810D /* AFEventListingCell.m in Sources */,
+				E77E249F1743414300FF2E02 /* AFEventDetailTableHeaderView.m in Sources */,
+				E77E24AB174AD7F400FF2E02 /* AFMapViewController.m in Sources */,
+				E77E24AE174AD95F00FF2E02 /* AFVenueAnnotation.m in Sources */,
+				E74A8D19174B300700293330 /* AFVenueDetailViewController.m in Sources */,
+				E74A8D1C174B3A6900293330 /* AFVenueAnnotationView.m in Sources */,
+				E74A8D1F174B496900293330 /* AFMoreViewController.m in Sources */,
+				E74A8D22174B499600293330 /* AFWebViewController.m in Sources */,
+				E74A8D52174B5FF500293330 /* AFAppearanceManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7FC986916C81A900052165A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7FC987E16C81A900052165A /* ArtsFestTests.m in Sources */,
+				E7FC98E216C826F10052165A /* AFSponsorListViewController.m in Sources */,
+				E7FC98E616C82A9D0052165A /* AFListingViewController.m in Sources */,
+				E7FC98EA16C82B630052165A /* AFEventListViewController.m in Sources */,
+				E7FC98EE16C82B700052165A /* AFArtistListViewController.m in Sources */,
+				E7FC98F216C82B820052165A /* AFCategoryListViewController.m in Sources */,
+				E7FC98F616C82CD50052165A /* AFVenueListViewController.m in Sources */,
+				E7FC98FA16C82E000052165A /* AFSplashViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E7FC987516C81A900052165A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E7FC984716C81A8F0052165A /* ArtsFest */;
+			targetProxy = E7FC987416C81A900052165A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E7FC985716C81A8F0052165A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E7FC985816C81A8F0052165A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E7FC987916C81A900052165A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E7FC987A16C81A900052165A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E7FC987F16C81A900052165A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"/Applications/Spark Inspector.app/Contents/Resources/Frameworks\"",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E7FC988016C81A900052165A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"/Applications/Spark Inspector.app/Contents/Resources/Frameworks\"",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E7FC988216C81A900052165A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ArtsFest/ArtsFest.entitlements;
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"/Applications/Spark Inspector.app/Contents/Resources/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ArtsFest/ArtsFest-Prefix.pch";
+				INFOPLIST_FILE = "ArtsFest/ArtsFest-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E7FC988316C81A900052165A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ArtsFest/ArtsFest.entitlements;
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"/Applications/Spark Inspector.app/Contents/Resources/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ArtsFest/ArtsFest-Prefix.pch";
+				INFOPLIST_FILE = "ArtsFest/ArtsFest-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		E7FC988516C81A900052165A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ArtsFest.app/ArtsFest";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"\"/Applications/Spark Inspector.app/Contents/Resources/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ArtsFest/ArtsFest-Prefix.pch";
+				INFOPLIST_FILE = "ArtsFestTests/ArtsFestTests-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		E7FC988616C81A900052165A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ArtsFest.app/ArtsFest";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"\"/Applications/Spark Inspector.app/Contents/Resources/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ArtsFest/ArtsFest-Prefix.pch";
+				INFOPLIST_FILE = "ArtsFestTests/ArtsFestTests-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E7FC984216C81A8F0052165A /* Build configuration list for PBXProject "ArtsFest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7FC987F16C81A900052165A /* Debug */,
+				E7FC988016C81A900052165A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E7FC988116C81A900052165A /* Build configuration list for PBXNativeTarget "ArtsFest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7FC988216C81A900052165A /* Debug */,
+				E7FC988316C81A900052165A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E7FC988416C81A900052165A /* Build configuration list for PBXNativeTarget "ArtsFestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7FC988516C81A900052165A /* Debug */,
+				E7FC988616C81A900052165A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E7FC986616C81A8F0052165A /* ArtsFest.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E7FC986716C81A8F0052165A /* ArtsFest.xcdatamodel */,
+			);
+			currentVersion = E7FC986716C81A8F0052165A /* ArtsFest.xcdatamodel */;
+			path = ArtsFest.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E7FC983F16C81A8F0052165A /* Project object */;
+}
