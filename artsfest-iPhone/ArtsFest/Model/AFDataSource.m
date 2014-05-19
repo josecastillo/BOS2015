@@ -64,7 +64,7 @@ static AFDataSource *instance;
 		dateSortFormatter.timeZone = [[NSTimeZone alloc] initWithName:@"US/Eastern"];
 		dateSortFormatter.calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
 		[dateSortFormatter setDateFormat:@"yyyyMMdd"];
-}
+    }
 	return self;
 }
 
@@ -76,7 +76,7 @@ static AFDataSource *instance;
 	NSString *entityName = resourceDescriptor[@"entityName"];
 	NSString *lastUpdatedKey = [entityName stringByAppendingString:@"LastUpdated"];
 	NSNumber *lastUpdated = [[NSUserDefaults standardUserDefaults] valueForKey:lastUpdatedKey];
-	NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://whispering-tundra-2412.herokuapp.com/%@.json?updated_since=%.0f", endpoint, [lastUpdated doubleValue]]];
+	NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://bos2014.herokuapp.com/%@.json?updated_since=%.0f", endpoint, [lastUpdated doubleValue]]];
 	dispatch_sync(dispatch_get_main_queue(), ^{[[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];});
 	NSData *data = [[NSData alloc] initWithContentsOfURL:url];
 	dispatch_sync(dispatch_get_main_queue(), ^{[[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];});
@@ -306,7 +306,7 @@ static AFDataSource *instance;
     }
 	NSPersistentStoreCoordinator *coordinator = [self persistentStoreCoordinator];
 	if (coordinator != nil) {
-		_managedObjectContext = [[NSManagedObjectContext alloc] init];
+		_managedObjectContext = [[NSManagedObjectContext alloc] initWithConcurrencyType:NSMainQueueConcurrencyType];
 		[_managedObjectContext setPersistentStoreCoordinator:coordinator];
 	}
     return _managedObjectContext;
@@ -363,6 +363,9 @@ static AFDataSource *instance;
         NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
         abort();
     }
+
+    if (![storeURL setResourceValue:@YES forKey:NSURLIsExcludedFromBackupKey error:&error])
+        NSLog(@"Failed to set iCloud backup attribute: %@", [error localizedDescription]);
     
     return _persistentStoreCoordinator;
 }
@@ -372,7 +375,13 @@ static AFDataSource *instance;
 // Returns the URL to the application's Documents directory.
 - (NSURL *)applicationDocumentsDirectory
 {
-    return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
+    NSURL *appSupportUrl = [[[NSFileManager defaultManager] URLsForDirectory:NSApplicationSupportDirectory inDomains:NSUserDomainMask] lastObject];
+    
+    if (![[NSFileManager defaultManager] fileExistsAtPath:[appSupportUrl path]])
+        if (![[NSFileManager defaultManager] createDirectoryAtURL:appSupportUrl withIntermediateDirectories:YES attributes:nil error:NULL])
+            NSLog(@"Failed to create application support directory.");
+    
+    return [[[NSFileManager defaultManager] URLsForDirectory:NSApplicationSupportDirectory inDomains:NSUserDomainMask] lastObject];
 }
 
 

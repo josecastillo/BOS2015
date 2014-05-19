@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E7001AD619288426002E9C5A /* Icon120.png in Resources */ = {isa = PBXBuildFile; fileRef = E7001AD519288426002E9C5A /* Icon120.png */; };
 		E74A8D19174B300700293330 /* AFVenueDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E74A8D18174B300700293330 /* AFVenueDetailViewController.m */; };
 		E74A8D1C174B3A6900293330 /* AFVenueAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = E74A8D1B174B3A6900293330 /* AFVenueAnnotationView.m */; };
 		E74A8D1F174B496900293330 /* AFMoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E74A8D1E174B496900293330 /* AFMoreViewController.m */; };
@@ -88,6 +89,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E7001AD519288426002E9C5A /* Icon120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon120.png; sourceTree = SOURCE_ROOT; };
 		E74A8D17174B300700293330 /* AFVenueDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFVenueDetailViewController.h; path = Controller/AFVenueDetailViewController.h; sourceTree = "<group>"; };
 		E74A8D18174B300700293330 /* AFVenueDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFVenueDetailViewController.m; path = Controller/AFVenueDetailViewController.m; sourceTree = "<group>"; };
 		E74A8D1A174B3A6900293330 /* AFVenueAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFVenueAnnotationView.h; path = View/AFVenueAnnotationView.h; sourceTree = "<group>"; };
@@ -344,6 +346,7 @@
 		E7FC985516C81A8F0052165A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E7001AD519288426002E9C5A /* Icon120.png */,
 				E74A8D23174B58B000293330 /* Assets */,
 				E7FC985A16C81A8F0052165A /* main.m */,
 				E7FC985C16C81A8F0052165A /* ArtsFest-Prefix.pch */,
@@ -423,6 +426,16 @@
 				CLASSPREFIX = AF;
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = "Panchromatic, LLC";
+				TargetAttributes = {
+					E7FC984716C81A8F0052165A = {
+						DevelopmentTeam = 5459V76WQG;
+						SystemCapabilities = {
+							com.apple.iOS = {
+								enabled = 0;
+							};
+						};
+					};
+				};
 			};
 			buildConfigurationList = E7FC984216C81A8F0052165A /* Build configuration list for PBXProject "ArtsFest" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -449,6 +462,7 @@
 			files = (
 				E7FC985916C81A8F0052165A /* InfoPlist.strings in Resources */,
 				E7FC988A16C81AEF0052165A /* Storyboard.storyboard in Resources */,
+				E7001AD619288426002E9C5A /* Icon120.png in Resources */,
 				E7825AC4173EA7FE00A88F02 /* Icon.png in Resources */,
 				E7825AC6173EA80300A88F02 /* Icon@2x.png in Resources */,
 				E74A8D35174B58B000293330 /* back.png in Resources */,
@@ -586,9 +600,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"/Applications/Spark Inspector.app/Contents/Resources/Frameworks\"",
-				);
+				FRAMEWORK_SEARCH_PATHS = "\"/Applications/Spark Inspector.app/Contents/Resources/Frameworks\"";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -618,9 +630,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"/Applications/Spark Inspector.app/Contents/Resources/Frameworks\"",
-				);
+				FRAMEWORK_SEARCH_PATHS = "\"/Applications/Spark Inspector.app/Contents/Resources/Frameworks\"";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
@@ -637,9 +647,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = ArtsFest/ArtsFest.entitlements;
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"/Applications/Spark Inspector.app/Contents/Resources/Frameworks\"",
-				);
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = "\"/Applications/Spark Inspector.app/Contents/Resources/Frameworks\"";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ArtsFest/ArtsFest-Prefix.pch";
 				INFOPLIST_FILE = "ArtsFest/ArtsFest-Info.plist";
@@ -653,9 +662,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = ArtsFest/ArtsFest.entitlements;
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"/Applications/Spark Inspector.app/Contents/Resources/Frameworks\"",
-				);
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = "\"/Applications/Spark Inspector.app/Contents/Resources/Frameworks\"";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ArtsFest/ArtsFest-Prefix.pch";
 				INFOPLIST_FILE = "ArtsFest/ArtsFest-Info.plist";

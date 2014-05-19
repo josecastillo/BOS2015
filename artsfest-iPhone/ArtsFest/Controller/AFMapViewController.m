@@ -21,7 +21,8 @@
 - (void)viewDidLoad {
 	[super viewDidLoad];
 	
-	self.managedObjectContext = [[AFDataSource defaultSource] managedObjectContext];
+	self.managedObjectContext = [[NSManagedObjectContext alloc] initWithConcurrencyType:NSConfinementConcurrencyType];
+    self.managedObjectContext.parentContext = [[AFDataSource defaultSource] managedObjectContext];
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
     // Edit the entity name as appropriate.
     NSEntityDescription *entity = [NSEntityDescription entityForName:@"AFVenue" inManagedObjectContext:self.managedObjectContext];
@@ -33,21 +34,22 @@
     // Set the sort descriptors.
     [fetchRequest setSortDescriptors:@[[NSSortDescriptor sortDescriptorWithKey:@"map_identifier" ascending:YES]]];
 	
-	NSError *error = nil;
-	NSArray *results = [self.managedObjectContext executeFetchRequest:fetchRequest error:&error];
-	
-	dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
-		for(NSManagedObject *venue in results) {
-			AFVenueAnnotation *annotation = [[AFVenueAnnotation alloc] initWithVenue:venue];
-			dispatch_sync(dispatch_get_main_queue(), ^{
-				[self.mapView addAnnotation:annotation];
-			});
-		}
-		canUpdateMarkers = YES;
-	});
+    NSError *error = nil;
+    NSArray *results = [self.managedObjectContext executeFetchRequest:fetchRequest error:&error];
+    
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
+        for(NSManagedObject *venue in results) {
+            AFVenueAnnotation *annotation = [[AFVenueAnnotation alloc] initWithVenue:venue];
+            dispatch_sync(dispatch_get_main_queue(), ^{
+                [self.mapView addAnnotation:annotation];
+            });
+        }
+        canUpdateMarkers = YES;
+    });
 	
 	MKCoordinateRegion targetRegion = MKCoordinateRegionMake(CLLocationCoordinate2DMake(40.697998, -73.923483), MKCoordinateSpanMake(0.047765, 0.054932));
 	self.mapView.region = targetRegion;
+    self.mapView.showsPointsOfInterest = NO;
 	self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Back"
 																			 style:UIBarButtonItemStyleBordered
 																			target:nil
@@ -73,6 +75,7 @@
 - (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(AFVenueAnnotation *)annotation {
 	if ([annotation isKindOfClass:[MKUserLocation class]])
 		return nil;
+    
 	NSString *identifier = [@"Annotation" stringByAppendingString:[annotation.venue valueForKey:@"map_identifier"]];
 	
 	MKAnnotationView *annotationView = [self.mapView dequeueReusableAnnotationViewWithIdentifier:identifier];
@@ -97,6 +100,10 @@
 }
 
 - (IBAction)scrollToCurrentLocation:(id)sender {
+    if (self.mapView.userLocation.coordinate.latitude == 0 || self.mapView.userLocation.coordinate.longitude == 0)
+        return;
+    
+    NSLog(@"%f, %f", self.mapView.userLocation.coordinate.latitude, self.mapView.userLocation.coordinate.longitude);
 	MKCoordinateRegion targetRegion = MKCoordinateRegionMake(self.mapView.userLocation.coordinate, MKCoordinateSpanMake(0.0047765, 0.0054932));
 	[self.mapView setRegion:targetRegion animated:YES];
 }

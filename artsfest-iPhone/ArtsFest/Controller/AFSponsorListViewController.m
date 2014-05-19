@@ -11,6 +11,8 @@
 
 @interface AFSponsorListViewController ()
 
+@property (nonatomic, strong) NSCharacterSet *charactersToTrim;
+
 @end
 
 @implementation AFSponsorListViewController
@@ -20,7 +22,9 @@ static void *urlToken;
 - (void)viewDidLoad {
 	[super viewDidLoad];
 	self.entityName = @"AFSponsor";
-	self.sortDescriptors = @[[[NSSortDescriptor alloc] initWithKey:@"sponsor_level" ascending:YES]];
+	self.sortDescriptors = @[[[NSSortDescriptor alloc] initWithKey:@"sponsor_level" ascending:YES], [[NSSortDescriptor alloc] initWithKey:@"name" ascending:YES selector:@selector(caseInsensitiveCompare:)]];
+    self.sectionNameKeyPath = @"sponsor_level";
+    self.charactersToTrim = [NSCharacterSet characterSetWithCharactersInString:@"1234567890 "];
 }
 
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath
@@ -31,7 +35,7 @@ static void *urlToken;
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
-	return @"Our Sponsors";
+	return [[[self.fetchedResultsController sections][section] name] stringByTrimmingCharactersInSet:self.charactersToTrim];
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {

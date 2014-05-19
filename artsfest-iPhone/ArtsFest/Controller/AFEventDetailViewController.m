@@ -13,7 +13,7 @@
 #import <MapKit/MapKit.h>
 
 @interface AFEventDetailViewController ()
-
+@property (nonatomic, assign) CGFloat labelWidth;
 @end
 
 @implementation AFEventDetailViewController
@@ -36,6 +36,11 @@
 	eventFeatures = [[NSMutableArray alloc] initWithCapacity:10];
 
 	[self.tableView registerClass:[AFEventDetailTableHeaderView class] forHeaderFooterViewReuseIdentifier:@"Header"];
+    
+    if (NSFoundationVersionNumber > NSFoundationVersionNumber_iOS_6_1)
+        self.labelWidth = 290;
+    else
+        self.labelWidth = 300;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -44,7 +49,7 @@
 
 - (void)viewWillAppear:(BOOL)animated {
 	if ([self.event valueForKey:@"venue"])
-		self.navigationItem.rightBarButtonItem.title = @"Directions";
+		self.navigationItem.rightBarButtonItem.title = @"Walk Here";
 	else
 		self.navigationItem.rightBarButtonItem.title = @"";
 	
@@ -57,7 +62,7 @@
 	[eventFeatures removeAllObjects];
 	NSArray *categories = [[self.event valueForKey:@"categories"] allObjects];
 	for (NSManagedObject *category in categories) {
-		if ([[category valueForKey:@"group"] isEqualToString:@"Event Features"] || [[category valueForKey:@"group"] isEqualToString:@"Special"])
+		if ([[category valueForKey:@"group"] isEqualToString:@"Event Features"] || [[category valueForKey:@"name"] isEqualToString:@"Hub"])
 			[eventFeatures addObject:[category valueForKey:@"name"]];
 		else
 			[eventCategories addObject:[category valueForKey:@"name"]];
@@ -66,7 +71,7 @@
 	self.titleLabel.text = [self.event valueForKey:@"name"];
 	CGRect titleFrame = self.titleLabel.frame;
 	titleFrame.size = [self.titleLabel.text sizeWithFont:[UIFont boldSystemFontOfSize:17.0]
-									   constrainedToSize:CGSizeMake(300, CGFLOAT_MAX)
+									   constrainedToSize:CGSizeMake(self.labelWidth, CGFLOAT_MAX)
 										   lineBreakMode:NSLineBreakByWordWrapping];
 	self.titleLabel.frame = titleFrame;
 	self.tableView.tableHeaderView.frame = CGRectMake(0, 0, 320, 100.0 + titleFrame.size.height);
@@ -208,11 +213,11 @@
 				CGSize summarySize;
 				if (showLongDescription)
 					summarySize = [[NSString stringWithFormat:@"%@\r\r%@", [self.event valueForKey:@"short_desc"], [self.event valueForKey:@"long_desc"]] sizeWithFont:[UIFont systemFontOfSize:13.0]
-																									   constrainedToSize:CGSizeMake(300, CGFLOAT_MAX)
+																									   constrainedToSize:CGSizeMake(self.labelWidth, CGFLOAT_MAX)
 																										   lineBreakMode:NSLineBreakByWordWrapping];
 				else
 					summarySize = [[self.event valueForKey:@"short_desc"] sizeWithFont:[UIFont systemFontOfSize:13.0]
-											  constrainedToSize:CGSizeMake(300, CGFLOAT_MAX)
+											  constrainedToSize:CGSizeMake(self.labelWidth, CGFLOAT_MAX)
 												  lineBreakMode:NSLineBreakByWordWrapping];
 				if ([[self.event valueForKey:@"long_desc"] length])
 					return summarySize.height + 50;
@@ -227,7 +232,7 @@
 		case 2:
 			if ([eventFeatures count])
 				return [[eventFeatures componentsJoinedByString:@", "] sizeWithFont:[UIFont systemFontOfSize:13.0]
-																  constrainedToSize:CGSizeMake(300, CGFLOAT_MAX)
+																  constrainedToSize:CGSizeMake(self.labelWidth, CGFLOAT_MAX)
 																	  lineBreakMode:NSLineBreakByWordWrapping].height + 10;
 			else
 				return 0;
@@ -235,7 +240,7 @@
 		case 3:
 			if ([eventCategories count])
 				return [[eventCategories componentsJoinedByString:@", "] sizeWithFont:[UIFont systemFontOfSize:13.0]
-																	constrainedToSize:CGSizeMake(300, CGFLOAT_MAX)
+																	constrainedToSize:CGSizeMake(self.labelWidth, CGFLOAT_MAX)
 																		lineBreakMode:NSLineBreakByWordWrapping].height + 20;
 			else
 				return 0;
@@ -243,7 +248,7 @@
 		case 4:
 			if ([artistNames count])
 				return [[artistNames componentsJoinedByString:@", "] sizeWithFont:[UIFont systemFontOfSize:13.0]
-																constrainedToSize:CGSizeMake(300, CGFLOAT_MAX)
+																constrainedToSize:CGSizeMake(self.labelWidth, CGFLOAT_MAX)
 																	lineBreakMode:NSLineBreakByWordWrapping].height + 20;
 			else
 				return 0;

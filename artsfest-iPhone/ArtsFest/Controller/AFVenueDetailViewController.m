@@ -31,6 +31,8 @@
 	timeFormatter.timeZone = [[NSTimeZone alloc] initWithName:@"US/Eastern"];
 	timeFormatter.calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
 	[timeFormatter setDateFormat:@"h:mma"];
+
+    self.mapView.showsPointsOfInterest = NO;
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -39,17 +41,17 @@
 	CGRect frame = self.tableView.tableHeaderView.frame;
 	if ([self.venue valueForKey:@"name"]) {
 		self.spaceNameLabel.text = [self.venue valueForKey:@"name"];
-		frame.size.height = 260;
+		frame.size.height = 240;
 		self.tableView.tableHeaderView.frame = frame;
 	} else {
 		self.spaceNameLabel.text = @"";
-		frame.size.height = 240;
+		frame.size.height = 220;
 		self.tableView.tableHeaderView.frame = frame;
 	}
 	self.addressLabel.text = [self.venue valueForKey:@"address"];
 	
 	CLLocationCoordinate2D coordinate = CLLocationCoordinate2DMake([[self.venue valueForKey:@"lat"] doubleValue], [[self.venue valueForKey:@"lon"] doubleValue]);
-	MKCoordinateRegion targetRegion = MKCoordinateRegionMake(coordinate, MKCoordinateSpanMake(0.011941, 0.013733));
+	MKCoordinateRegion targetRegion = MKCoordinateRegionMake(coordinate, MKCoordinateSpanMake(0.005, 0.005));
 	self.mapView.region = targetRegion;
 	[self.mapView removeAnnotations:self.mapView.annotations];
 	[self.mapView addAnnotation:[[AFVenueAnnotation alloc] initWithVenue:self.venue]];
