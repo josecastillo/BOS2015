@@ -49,7 +49,8 @@
 	
 	MKCoordinateRegion targetRegion = MKCoordinateRegionMake(CLLocationCoordinate2DMake(40.697998, -73.923483), MKCoordinateSpanMake(0.047765, 0.054932));
 	self.mapView.region = targetRegion;
-    self.mapView.showsPointsOfInterest = NO;
+    if ([self.mapView respondsToSelector:@selector(showsPointsOfInterest)])
+        self.mapView.showsPointsOfInterest = NO;
 	self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Back"
 																			 style:UIBarButtonItemStyleBordered
 																			target:nil

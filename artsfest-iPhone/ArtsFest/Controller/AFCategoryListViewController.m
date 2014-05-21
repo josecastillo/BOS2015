@@ -37,5 +37,7 @@
 	} else {
 		destinationViewController.predicate = [NSPredicate predicateWithFormat:@"(%K == %@)", @"event.section", @"studios"];
 	}
+    
+	destinationViewController.sortDescriptors = @[[[NSSortDescriptor alloc] initWithKey:@"daySort" ascending:YES], [[NSSortDescriptor alloc] initWithKey:@"event.name" ascending:YES selector:@selector(localizedCaseInsensitiveCompare:)]];
 }
 @end

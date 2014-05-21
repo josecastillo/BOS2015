@@ -18,14 +18,14 @@
 
 - (void)awakeFromNib {
 	[super awakeFromNib];
+	self.entityName = @"AFEventHours";
 	self.predicate = [NSPredicate predicateWithFormat:@"(%K == %@)", @"event.section", @"events"];
+	self.sortDescriptors = @[[[NSSortDescriptor alloc] initWithKey:@"daySort" ascending:YES], [[NSSortDescriptor alloc] initWithKey:@"opens" ascending:YES], [[NSSortDescriptor alloc] initWithKey:@"event.name" ascending:YES selector:@selector(localizedCaseInsensitiveCompare:)]];
+	self.sectionNameKeyPath = @"day";
 }
 
 - (void)viewDidLoad {
 	[super viewDidLoad];
-	self.entityName = @"AFEventHours";
-	self.sortDescriptors = @[[[NSSortDescriptor alloc] initWithKey:@"daySort" ascending:YES], [[NSSortDescriptor alloc] initWithKey:@"event.name" ascending:YES selector:@selector(localizedCaseInsensitiveCompare:)]];
-	self.sectionNameKeyPath = @"day";
 	
 	locationManager = [[CLLocationManager alloc] init];
 	locationManager.delegate = self;

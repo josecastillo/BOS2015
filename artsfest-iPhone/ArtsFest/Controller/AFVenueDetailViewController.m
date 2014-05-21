@@ -32,7 +32,8 @@
 	timeFormatter.calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
 	[timeFormatter setDateFormat:@"h:mma"];
 
-    self.mapView.showsPointsOfInterest = NO;
+    if ([self.mapView respondsToSelector:@selector(showsPointsOfInterest)])
+        self.mapView.showsPointsOfInterest = NO;
 }
 
 - (void)viewWillAppear:(BOOL)animated {

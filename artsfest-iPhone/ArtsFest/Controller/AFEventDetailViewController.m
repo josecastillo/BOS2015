@@ -62,7 +62,7 @@
 	[eventFeatures removeAllObjects];
 	NSArray *categories = [[self.event valueForKey:@"categories"] allObjects];
 	for (NSManagedObject *category in categories) {
-		if ([[category valueForKey:@"group"] isEqualToString:@"Event Features"] || [[category valueForKey:@"name"] isEqualToString:@"Hub"])
+		if ([[category valueForKey:@"group"] isEqualToString:@"Event Features"] || [[category valueForKey:@"name"] rangeOfString:@"Hub"].location != NSNotFound)
 			[eventFeatures addObject:[category valueForKey:@"name"]];
 		else
 			[eventCategories addObject:[category valueForKey:@"name"]];
