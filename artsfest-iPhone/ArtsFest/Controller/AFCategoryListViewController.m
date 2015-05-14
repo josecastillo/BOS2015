@@ -25,7 +25,7 @@
     NSManagedObject *object = [self.fetchedResultsController objectAtIndexPath:indexPath];
     cell.textLabel.text = [object valueForKey:@"name"];
 	NSSet *allEvents = [object valueForKey:@"events"];
-    cell.detailTextLabel.text = [NSString stringWithFormat:@"%d", [[allEvents filteredSetUsingPredicate:[NSPredicate predicateWithFormat:@"%K == %@", @"section", @"studios"]] count]];
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"%lu", (unsigned long)[[allEvents filteredSetUsingPredicate:[NSPredicate predicateWithFormat:@"%K == %@", @"section", @"studios"]] count]];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {

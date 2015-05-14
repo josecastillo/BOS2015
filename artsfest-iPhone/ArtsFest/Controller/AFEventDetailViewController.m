@@ -9,6 +9,7 @@
 #import "AFEventDetailViewController.h"
 #import "AFEventDetailTableHeaderView.h"
 #import "AFVenueDetailViewController.h"
+#import "AFDataSource.h"
 #import <AddressBook/AddressBook.h>
 #import <MapKit/MapKit.h>
 
@@ -48,10 +49,7 @@
 }
 
 - (void)viewWillAppear:(BOOL)animated {
-	if ([self.event valueForKey:@"venue"])
-		self.navigationItem.rightBarButtonItem.title = @"Walk Here";
-	else
-		self.navigationItem.rightBarButtonItem.title = @"";
+    self.navigationItem.rightBarButtonItem.title = @"Favorite";
 	
 	[artistNames removeAllObjects];
 	NSArray *artists = [[self.event valueForKey:@"artists"] allObjects];
@@ -317,21 +315,31 @@
 	return NO;
 }
 
-- (IBAction)showDirections:(id)sender {
-	if ([self.event valueForKey:@"venue"]) {
-		NSDictionary *address =
-		@{
-		(NSString *)kABPersonAddressStreetKey : [self.event valueForKeyPath:@"venue.address"],
-		(NSString *)kABPersonAddressCityKey : [self.event valueForKeyPath:@"venue.city"],
-		(NSString *)kABPersonAddressStateKey : [self.event valueForKeyPath:@"venue.state"],
-		(NSString *)kABPersonAddressCountryKey : [self.event valueForKeyPath:@"venue.country"]
-		};
-		CLLocationCoordinate2D coordinate = CLLocationCoordinate2DMake([[self.event valueForKeyPath:@"venue.lat"] doubleValue], [[self.event valueForKeyPath:@"venue.lon"] doubleValue]);
-		MKPlacemark *destinationPlacemark = [[MKPlacemark alloc] initWithCoordinate:coordinate addressDictionary:address];
-		MKMapItem *destinationMapItem = [[MKMapItem alloc] initWithPlacemark:destinationPlacemark];
-		
-		[destinationMapItem openInMapsWithLaunchOptions:@{MKLaunchOptionsDirectionsModeKey:MKLaunchOptionsDirectionsModeWalking}];
-	}
+- (IBAction)toggleFavorite:(UIBarButtonItem *)sender {
+    UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:@"Add to My Favorites"
+                                                             delegate:self
+                                                    cancelButtonTitle:nil
+                                               destructiveButtonTitle:nil
+                                                    otherButtonTitles:nil];
+    NSArray *hours = [[self.event valueForKey:@"hours"] sortedArrayUsingDescriptors:@[[NSSortDescriptor sortDescriptorWithKey:@"opens" ascending:YES]]];
+    for (NSManagedObject *hour in hours) {
+        if ([hour valueForKey:@"closes"])
+            [actionSheet addButtonWithTitle:[NSString stringWithFormat:@"%@ %@, %@ – %@", [[hour valueForKey:@"favorite"] boolValue] ? @"★" : @"☆", [dateFormatter stringFromDate:[hour valueForKey:@"opens"]], [timeFormatter stringFromDate:[hour valueForKey:@"opens"]], [timeFormatter stringFromDate:[hour valueForKey:@"closes"]]]];
+        else
+            [actionSheet addButtonWithTitle:[NSString stringWithFormat:@"%@ %@, %@ – ", [[hour valueForKey:@"favorite"] boolValue] ? @"★" : @"☆", [dateFormatter stringFromDate:[hour valueForKey:@"opens"]], [dateFormatter stringFromDate:[hour valueForKey:@"opens"]]]];
+    }
+    [actionSheet addButtonWithTitle:@"Cancel"];
+    [actionSheet setCancelButtonIndex:actionSheet.numberOfButtons - 1];
+    [actionSheet showFromTabBar:self.tabBarController.tabBar];
+}
+
+- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
+    if (buttonIndex != actionSheet.cancelButtonIndex) {
+        NSArray *hours = [[self.event valueForKey:@"hours"] sortedArrayUsingDescriptors:@[[NSSortDescriptor sortDescriptorWithKey:@"opens" ascending:YES]]];
+        NSManagedObject *hour = [hours objectAtIndex:buttonIndex];
+        [hour setValue:@(![[hour valueForKey:@"favorite"] boolValue]) forKey:@"favorite"];
+        [[AFDataSource defaultSource] saveContext];
+    }
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {

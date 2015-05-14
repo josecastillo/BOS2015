@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AFEventDetailViewController : UITableViewController {
+@interface AFEventDetailViewController : UITableViewController <UIActionSheetDelegate> {
 	NSDateFormatter *dateFormatter;
 	NSDateFormatter *timeFormatter;
 	NSMutableArray *eventCategories;
@@ -19,6 +19,6 @@
 @property (nonatomic, strong) NSManagedObject *event;
 @property (nonatomic, strong) IBOutlet UILabel *titleLabel;
 @property (nonatomic, strong) IBOutlet UILabel *timesLabel;
-- (IBAction)showDirections:(id)sender;
+- (IBAction)toggleFavorite:(UIBarButtonItem *)sender;
 
 @end

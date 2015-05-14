@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
-	<string>BOS 2014</string>
+	<string>BOS 2015</string>
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIcons</key>
@@ -24,7 +24,7 @@
 		</dict>
 	</dict>
 	<key>CFBundleIdentifier</key>
-	<string>net.panchromatic.${PRODUCT_NAME:rfc1034identifier}.BOS2014</string>
+	<string>net.panchromatic.${PRODUCT_NAME:rfc1034identifier}.BOS2015</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -32,14 +32,16 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.01</string>
+	<string>1.00</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>1.01</string>
+	<string>1.00</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSLocationUsageDescription</key>
+	<string>Your location is used to show distance to nearby open studios and events. It is only used on your device, and is never uploaded, shared or stored.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Your location is used to show distance to nearby open studios and events. It is only used on your device, and is never uploaded, shared or stored.</string>
 	<key>UIMainStoryboardFile</key>
 	<string>Storyboard</string>
@@ -60,9 +62,9 @@
 				<key>Blue</key>
 				<real>0.4759196937084198</real>
 				<key>Green</key>
-				<real>0.0</real>
+				<real>0</real>
 				<key>Red</key>
-				<real>0.86571168899536133</real>
+				<real>0.8657116889953613</real>
 			</dict>
 			<key>Translucent</key>
 			<false/>

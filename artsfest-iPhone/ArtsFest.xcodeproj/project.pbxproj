@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E7001AD619288426002E9C5A /* Icon120.png in Resources */ = {isa = PBXBuildFile; fileRef = E7001AD519288426002E9C5A /* Icon120.png */; };
+		E725BB291B04FA7800F216DE /* AFFavoriteEventsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E725BB281B04FA7800F216DE /* AFFavoriteEventsListViewController.m */; };
 		E74A8D19174B300700293330 /* AFVenueDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E74A8D18174B300700293330 /* AFVenueDetailViewController.m */; };
 		E74A8D1C174B3A6900293330 /* AFVenueAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = E74A8D1B174B3A6900293330 /* AFVenueAnnotationView.m */; };
 		E74A8D1F174B496900293330 /* AFMoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E74A8D1E174B496900293330 /* AFMoreViewController.m */; };
@@ -54,42 +55,20 @@
 		E7FC985B16C81A8F0052165A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E7FC985A16C81A8F0052165A /* main.m */; };
 		E7FC985F16C81A8F0052165A /* AFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E7FC985E16C81A8F0052165A /* AFAppDelegate.m */; };
 		E7FC986816C81A8F0052165A /* ArtsFest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E7FC986616C81A8F0052165A /* ArtsFest.xcdatamodeld */; };
-		E7FC987016C81A900052165A /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7FC986F16C81A900052165A /* SenTestingKit.framework */; };
-		E7FC987116C81A900052165A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7FC984C16C81A8F0052165A /* UIKit.framework */; };
-		E7FC987216C81A900052165A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7FC984E16C81A8F0052165A /* Foundation.framework */; };
-		E7FC987316C81A900052165A /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7FC985216C81A8F0052165A /* CoreData.framework */; };
-		E7FC987B16C81A900052165A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E7FC987916C81A900052165A /* InfoPlist.strings */; };
-		E7FC987E16C81A900052165A /* ArtsFestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E7FC987D16C81A900052165A /* ArtsFestTests.m */; };
 		E7FC988A16C81AEF0052165A /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7FC988916C81AEF0052165A /* Storyboard.storyboard */; };
-		E7FC988B16C81AEF0052165A /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7FC988916C81AEF0052165A /* Storyboard.storyboard */; };
 		E7FC98E116C826F10052165A /* AFSponsorListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7FC98E016C826F10052165A /* AFSponsorListViewController.m */; };
-		E7FC98E216C826F10052165A /* AFSponsorListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7FC98E016C826F10052165A /* AFSponsorListViewController.m */; };
 		E7FC98E516C82A9D0052165A /* AFListingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7FC98E416C82A9D0052165A /* AFListingViewController.m */; };
-		E7FC98E616C82A9D0052165A /* AFListingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7FC98E416C82A9D0052165A /* AFListingViewController.m */; };
 		E7FC98E916C82B630052165A /* AFEventListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7FC98E816C82B630052165A /* AFEventListViewController.m */; };
-		E7FC98EA16C82B630052165A /* AFEventListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7FC98E816C82B630052165A /* AFEventListViewController.m */; };
 		E7FC98ED16C82B700052165A /* AFArtistListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7FC98EC16C82B700052165A /* AFArtistListViewController.m */; };
-		E7FC98EE16C82B700052165A /* AFArtistListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7FC98EC16C82B700052165A /* AFArtistListViewController.m */; };
 		E7FC98F116C82B820052165A /* AFCategoryListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7FC98F016C82B820052165A /* AFCategoryListViewController.m */; };
-		E7FC98F216C82B820052165A /* AFCategoryListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7FC98F016C82B820052165A /* AFCategoryListViewController.m */; };
 		E7FC98F516C82CD50052165A /* AFVenueListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7FC98F416C82CD50052165A /* AFVenueListViewController.m */; };
-		E7FC98F616C82CD50052165A /* AFVenueListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7FC98F416C82CD50052165A /* AFVenueListViewController.m */; };
 		E7FC98F916C82E000052165A /* AFSplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7FC98F816C82E000052165A /* AFSplashViewController.m */; };
-		E7FC98FA16C82E000052165A /* AFSplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7FC98F816C82E000052165A /* AFSplashViewController.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		E7FC987416C81A900052165A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E7FC983F16C81A8F0052165A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E7FC984716C81A8F0052165A;
-			remoteInfo = ArtsFest;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		E7001AD519288426002E9C5A /* Icon120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon120.png; sourceTree = SOURCE_ROOT; };
+		E725BB271B04FA7800F216DE /* AFFavoriteEventsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFFavoriteEventsListViewController.h; path = Controller/AFFavoriteEventsListViewController.h; sourceTree = "<group>"; };
+		E725BB281B04FA7800F216DE /* AFFavoriteEventsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFFavoriteEventsListViewController.m; path = Controller/AFFavoriteEventsListViewController.m; sourceTree = "<group>"; };
 		E74A8D17174B300700293330 /* AFVenueDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFVenueDetailViewController.h; path = Controller/AFVenueDetailViewController.h; sourceTree = "<group>"; };
 		E74A8D18174B300700293330 /* AFVenueDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFVenueDetailViewController.m; path = Controller/AFVenueDetailViewController.m; sourceTree = "<group>"; };
 		E74A8D1A174B3A6900293330 /* AFVenueAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFVenueAnnotationView.h; path = View/AFVenueAnnotationView.h; sourceTree = "<group>"; };
@@ -153,12 +132,7 @@
 		E7FC985D16C81A8F0052165A /* AFAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFAppDelegate.h; sourceTree = "<group>"; };
 		E7FC985E16C81A8F0052165A /* AFAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFAppDelegate.m; sourceTree = "<group>"; };
 		E7FC986716C81A8F0052165A /* ArtsFest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ArtsFest.xcdatamodel; sourceTree = "<group>"; };
-		E7FC986E16C81A900052165A /* ArtsFestTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArtsFestTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7FC986F16C81A900052165A /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		E7FC987816C81A900052165A /* ArtsFestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ArtsFestTests-Info.plist"; sourceTree = "<group>"; };
-		E7FC987A16C81A900052165A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		E7FC987C16C81A900052165A /* ArtsFestTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArtsFestTests.h; sourceTree = "<group>"; };
-		E7FC987D16C81A900052165A /* ArtsFestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArtsFestTests.m; sourceTree = "<group>"; };
 		E7FC988916C81AEF0052165A /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		E7FC98DF16C826F10052165A /* AFSponsorListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFSponsorListViewController.h; path = Controller/AFSponsorListViewController.h; sourceTree = "<group>"; };
 		E7FC98E016C826F10052165A /* AFSponsorListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFSponsorListViewController.m; path = Controller/AFSponsorListViewController.m; sourceTree = "<group>"; };
@@ -190,17 +164,6 @@
 				E7FC984F16C81A8F0052165A /* Foundation.framework in Frameworks */,
 				E7FC985116C81A8F0052165A /* CoreGraphics.framework in Frameworks */,
 				E7FC985316C81A8F0052165A /* CoreData.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E7FC986A16C81A900052165A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E7FC987016C81A900052165A /* SenTestingKit.framework in Frameworks */,
-				E7FC987116C81A900052165A /* UIKit.framework in Frameworks */,
-				E7FC987216C81A900052165A /* Foundation.framework in Frameworks */,
-				E7FC987316C81A900052165A /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +234,8 @@
 				E74A8D1E174B496900293330 /* AFMoreViewController.m */,
 				E74A8D20174B499600293330 /* AFWebViewController.h */,
 				E74A8D21174B499600293330 /* AFWebViewController.m */,
+				E725BB271B04FA7800F216DE /* AFFavoriteEventsListViewController.h */,
+				E725BB281B04FA7800F216DE /* AFFavoriteEventsListViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -296,7 +261,6 @@
 			isa = PBXGroup;
 			children = (
 				E7FC985416C81A8F0052165A /* ArtsFest */,
-				E7FC987616C81A900052165A /* ArtsFestTests */,
 				E7FC984B16C81A8F0052165A /* Frameworks */,
 				E7FC984916C81A8F0052165A /* Products */,
 			);
@@ -306,7 +270,6 @@
 			isa = PBXGroup;
 			children = (
 				E7FC984816C81A8F0052165A /* ArtsFest.app */,
-				E7FC986E16C81A900052165A /* ArtsFestTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -359,25 +322,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		E7FC987616C81A900052165A /* ArtsFestTests */ = {
-			isa = PBXGroup;
-			children = (
-				E7FC987C16C81A900052165A /* ArtsFestTests.h */,
-				E7FC987D16C81A900052165A /* ArtsFestTests.m */,
-				E7FC987716C81A900052165A /* Supporting Files */,
-			);
-			path = ArtsFestTests;
-			sourceTree = "<group>";
-		};
-		E7FC987716C81A900052165A /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				E7FC987816C81A900052165A /* ArtsFestTests-Info.plist */,
-				E7FC987916C81A900052165A /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -398,25 +342,6 @@
 			productReference = E7FC984816C81A8F0052165A /* ArtsFest.app */;
 			productType = "com.apple.product-type.application";
 		};
-		E7FC986D16C81A900052165A /* ArtsFestTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E7FC988416C81A900052165A /* Build configuration list for PBXNativeTarget "ArtsFestTests" */;
-			buildPhases = (
-				E7FC986916C81A900052165A /* Sources */,
-				E7FC986A16C81A900052165A /* Frameworks */,
-				E7FC986B16C81A900052165A /* Resources */,
-				E7FC986C16C81A900052165A /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E7FC987516C81A900052165A /* PBXTargetDependency */,
-			);
-			name = ArtsFestTests;
-			productName = ArtsFestTests;
-			productReference = E7FC986E16C81A900052165A /* ArtsFestTests.octest */;
-			productType = "com.apple.product-type.bundle";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -424,6 +349,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = AF;
+				LastTestingUpgradeCheck = 0630;
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = "Panchromatic, LLC";
 				TargetAttributes = {
@@ -450,7 +376,6 @@
 			projectRoot = "";
 			targets = (
 				E7FC984716C81A8F0052165A /* ArtsFest */,
-				E7FC986D16C81A900052165A /* ArtsFestTests */,
 			);
 		};
 /* End PBXProject section */
@@ -487,32 +412,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E7FC986B16C81A900052165A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E7FC987B16C81A900052165A /* InfoPlist.strings in Resources */,
-				E7FC988B16C81AEF0052165A /* Storyboard.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		E7FC986C16C81A900052165A /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E7FC984416C81A8F0052165A /* Sources */ = {
@@ -529,6 +429,7 @@
 				E7FC98F116C82B820052165A /* AFCategoryListViewController.m in Sources */,
 				E7FC98F516C82CD50052165A /* AFVenueListViewController.m in Sources */,
 				E7FC98F916C82E000052165A /* AFSplashViewController.m in Sources */,
+				E725BB291B04FA7800F216DE /* AFFavoriteEventsListViewController.m in Sources */,
 				E7825AC2173E9F0C00A88F02 /* AFDataSource.m in Sources */,
 				E7825ACC173EB1AB00A88F02 /* AFTableHeaderView.m in Sources */,
 				E7825ACF173FF99800A88F02 /* AFEventDetailViewController.m in Sources */,
@@ -544,44 +445,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E7FC986916C81A900052165A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E7FC987E16C81A900052165A /* ArtsFestTests.m in Sources */,
-				E7FC98E216C826F10052165A /* AFSponsorListViewController.m in Sources */,
-				E7FC98E616C82A9D0052165A /* AFListingViewController.m in Sources */,
-				E7FC98EA16C82B630052165A /* AFEventListViewController.m in Sources */,
-				E7FC98EE16C82B700052165A /* AFArtistListViewController.m in Sources */,
-				E7FC98F216C82B820052165A /* AFCategoryListViewController.m in Sources */,
-				E7FC98F616C82CD50052165A /* AFVenueListViewController.m in Sources */,
-				E7FC98FA16C82E000052165A /* AFSplashViewController.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		E7FC987516C81A900052165A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E7FC984716C81A8F0052165A /* ArtsFest */;
-			targetProxy = E7FC987416C81A900052165A /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		E7FC985716C81A8F0052165A /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				E7FC985816C81A8F0052165A /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		E7FC987916C81A900052165A /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E7FC987A16C81A900052165A /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -600,7 +470,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				FRAMEWORK_SEARCH_PATHS = "\"/Applications/Spark Inspector.app/Contents/Resources/Frameworks\"";
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -630,7 +500,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
-				FRAMEWORK_SEARCH_PATHS = "\"/Applications/Spark Inspector.app/Contents/Resources/Frameworks\"";
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
@@ -648,7 +518,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = ArtsFest/ArtsFest.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = "\"/Applications/Spark Inspector.app/Contents/Resources/Frameworks\"";
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ArtsFest/ArtsFest-Prefix.pch";
 				INFOPLIST_FILE = "ArtsFest/ArtsFest-Info.plist";
@@ -663,51 +533,13 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = ArtsFest/ArtsFest.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = "\"/Applications/Spark Inspector.app/Contents/Resources/Frameworks\"";
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ArtsFest/ArtsFest-Prefix.pch";
 				INFOPLIST_FILE = "ArtsFest/ArtsFest-Info.plist";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		E7FC988516C81A900052165A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ArtsFest.app/ArtsFest";
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
-					"\"/Applications/Spark Inspector.app/Contents/Resources/Frameworks\"",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ArtsFest/ArtsFest-Prefix.pch";
-				INFOPLIST_FILE = "ArtsFestTests/ArtsFestTests-Info.plist";
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Debug;
-		};
-		E7FC988616C81A900052165A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ArtsFest.app/ArtsFest";
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
-					"\"/Applications/Spark Inspector.app/Contents/Resources/Frameworks\"",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ArtsFest/ArtsFest-Prefix.pch";
-				INFOPLIST_FILE = "ArtsFestTests/ArtsFestTests-Info.plist";
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
 		};
@@ -728,15 +560,6 @@
 			buildConfigurations = (
 				E7FC988216C81A900052165A /* Debug */,
 				E7FC988316C81A900052165A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E7FC988416C81A900052165A /* Build configuration list for PBXNativeTarget "ArtsFestTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E7FC988516C81A900052165A /* Debug */,
-				E7FC988616C81A900052165A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

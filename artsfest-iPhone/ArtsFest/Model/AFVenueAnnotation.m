@@ -24,7 +24,7 @@
 	if ([events count] == 1) {
 		return [[events anyObject] valueForKey:@"name"];
 	} else {
-		return [NSString stringWithFormat:@"%d events", [events count]];
+		return [NSString stringWithFormat:@"%lu events", (unsigned long)[events count]];
 	}
 }
 

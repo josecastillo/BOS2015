@@ -10,31 +10,31 @@
 	<string>ArtsFest</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>093A4512-2C0E-4D49-9F78-DDB82715735C</key>
-		<string>https://github.com/josecastillo/BOS2013.git</string>
+		<key>F2525C6A1C28A3C4B9DBB5DD248E8CC0B7F24143</key>
+		<string>github.com:josecastillo/BOS2013.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>artsfest-iPhone/ArtsFest.xcodeproj/project.xcworkspace</string>
+	<string>artsfest-iPhone/ArtsFest.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>093A4512-2C0E-4D49-9F78-DDB82715735C</key>
+		<key>F2525C6A1C28A3C4B9DBB5DD248E8CC0B7F24143</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/josecastillo/BOS2013.git</string>
+	<string>github.com:josecastillo/BOS2013.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>093A4512-2C0E-4D49-9F78-DDB82715735C</string>
+	<string>F2525C6A1C28A3C4B9DBB5DD248E8CC0B7F24143</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>093A4512-2C0E-4D49-9F78-DDB82715735C</string>
+			<string>F2525C6A1C28A3C4B9DBB5DD248E8CC0B7F24143</string>
 			<key>IDESourceControlWCCName</key>
-			<string>BOS2014</string>
+			<string>BOS2013</string>
 		</dict>
 	</array>
 </dict>
